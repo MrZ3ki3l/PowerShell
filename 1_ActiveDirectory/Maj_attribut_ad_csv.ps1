@@ -63,7 +63,7 @@ Write-Host "=================================================================="
 Write-host "=    Ce script     ="
 Write-Host "=								 ="
 Write-Host "=								 ="
-Write-Host "= Version:		         Réalisation:  ="
+Write-Host "= Version: $Version_Script		         Réalisation:  ="
 Write-Host "=================================================================="
 Write-Host ""
 Write-Host ""
@@ -82,7 +82,7 @@ Write-Host ""
 
 #-----------------------------------------------------------[Traitement]------------------------------------------------------------
 # Lancement du log
-Start-Log -LogPath $Fichier_log -LogName $Nom_log -ScriptVersion $Version_Script
+Start-Log -LogPath $Chemin_log -LogName $Nom_log -ScriptVersion $Version_Script
 
 # Recuperation du contenu du fichier csv
 $csvVirtuel = Import-Csv $CheminFichierCSV -Delimiter ";"
