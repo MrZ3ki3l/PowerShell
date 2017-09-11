@@ -2,7 +2,7 @@
 Get-Module -ListAvailable PowerCLI* | Import-Module
 
 # Import de mon module perso
-Import-Module /Users/t_rousselle/GITLAB/Perso/PowerShell/2_VMware/Fonctions_vmware_perso.ps1
+Import-Module /GITLAB/Perso/PowerShell/2_VMware/Fonctions_vmware_perso.ps1
 
 # Ignore les erreurs SSL dû au certificat auto-signé
 Set-PowerCLIConfiguration -InvalidCertificateAction Ignore
